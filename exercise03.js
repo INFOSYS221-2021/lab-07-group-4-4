@@ -3,43 +3,34 @@
 // Create your JavaScript objects
 let student = {
    name: "John Wick",
-   id: "White",
    username: "Baba_Yaga",
+   get nickname() {
+       return student.name + " AKA " + student.username
+   },
    courses:[
       {
-         title: "Bio",
-         category: "Med School",
+         title: "course1",
+         category: "cat1",
          category_num: "101",
-         short_desc: "The human body",
+         short_desc: "desc1",
          offered: "sem1"
       },
        {
-         title: "Mechs",
-         category: "Med",
+         title: "course2",
+         category: "cat2",
          category_num: "102",
-         short_desc: "Weapons",
-         offered: "sem1"
-      },
-       {
-         title: "Bio",
-         category: "Med",
-         category_num: "103",
-         short_desc: "uhhhhh",
+         short_desc: "desc2",
          offered: "sem1"
       }
    ],
    major: [
       {
-         title: "BioMechanice",
+         title: "major1",
       },
        {
-         title: "BigOOOOOF",
-      },
-   },
+         title: "major2",
+      }
+   ]
 } 
 
-// print different properties of your objects
-console.log("First name of person: " + person.firstName);
-for (i in person.phoneNumbers) {
-    console.log("Phone number: " + person.phoneNumbers[i].number);
-}
+console.log(student.nickname)
