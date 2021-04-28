@@ -1,30 +1,41 @@
 // Example object and print statements
 
 // Create your JavaScript objects
-let person = {
-   firstName: "Snow",
-   lastName: "White",
-   isFiction: true,
-   age: 18,
-   address: {
-      streetAddress: "7 Fairytale Lane",
-      city: "Fairytale Forest"
-   },
-   phoneNumbers:[
+let student = {
+   name: "John Wick",
+   id: "White",
+   username: "Baba_Yaga",
+   courses:[
       {
-         type: "home",
-         number: "01 123-4567"
+         title: "Bio",
+         category: "Med School",
+         category_num: "101",
+         short_desc: "The human body",
+         offered: "sem1"
       },
-      {
-         type: "office",
-         number: "01 555-4567"
+       {
+         title: "Mechs",
+         category: "Med",
+         category_num: "102",
+         short_desc: "Weapons",
+         offered: "sem1"
       },
-      {
-         type: "mobile",
-         number: "028 456-7890"
+       {
+         title: "Bio",
+         category: "Med",
+         category_num: "103",
+         short_desc: "uhhhhh",
+         offered: "sem1"
       }
    ],
-   spouse: null
+   major: [
+      {
+         title: "BioMechanice",
+      },
+       {
+         title: "BigOOOOOF",
+      },
+   },
 } 
 
 // print different properties of your objects
